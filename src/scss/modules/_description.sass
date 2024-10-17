@@ -1,0 +1,112 @@
+.description
+
+  &__container
+    margin-top: 41px
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    border-radius: 8px
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(66, 66, 66, 0.2)
+    -moz-box-shadow: 0px 4px 10px 0px rgba(66, 66, 66, 0.2)
+    box-shadow: 0px 4px 10px 0px rgba(66, 66, 66, 0.2)
+
+  &__title
+    font-size: 39px
+    font-weight: 800
+    white-space: nowrap
+    margin-top: 32px
+    z-index: 2
+    
+  &__img
+    border-radius: 0 7px 7px 0
+    width: 95%
+
+    &-container
+      position: relative
+
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: linear-gradient(277deg, rgba(255,255,255,0) 0%, rgba(253,253,255,1) 85%)
+        z-index: 1
+
+      &::after
+        content: 'сегодня скидка!!!'
+        position: absolute
+        top: 11px
+        right: 50px
+        z-index: 1
+        padding: 4px 10px
+        background-color: rgba(255, 255, 255, 0.8)
+        border-radius: 3px
+        font-size: 10px
+
+  &__features
+    margin-top: 19px
+    display: flex
+    justify-content: start
+    gap: 6px
+    flex-wrap: wrap
+    padding-left: 0
+
+  &__feature
+    padding: 6px 12px
+    background-color: #E9E9E9
+    font-size: 14px
+    font-weight: 600
+    border-radius: 3px
+
+  &__text
+    display: block
+    color: $font-grey
+    margin-top: 12px
+    padding-bottom: 28px
+    
+    &-content
+      background-color: $bg-mobile
+      border-radius: 7px 0 0 7px
+      display: flex
+      flex-direction: column
+      padding-left: 24px
+      justify-content: center
+
+
+@media(max-width: 991px)
+
+  .description
+
+    &__container
+      flex-direction: row
+
+    &__title
+      font-size: 28px
+
+    &__text
+      margin-top: 18px
+      padding: 18px 16px 28px
+
+      &-content
+        padding: 0
+
+    &__features
+      justify-content: center
+      gap: 8px
+
+    &__img
+      width: 100%
+
+      &-container
+        &::before
+          background: rgb(255,255,255)
+          background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(253,253,255,1) 90%)
+
+        &::after
+          top: 16px
+          left: 6px
+          right: auto
+
+

@@ -1,0 +1,58 @@
+.reviews
+  justify-content: center
+
+  &__title
+    margin-top: 48px
+    font-size: 28px
+    font-weight: 800
+    color: $font-grey
+
+    &-container
+      display: flex
+      gap: 10px
+
+  &__quantity
+    display: flex
+    margin-top: 48px
+    font-size: 13px
+    color: $font-grey
+    font-weight: 600
+
+    &-index
+      display: none
+
+  &__btn
+    width: 437px
+    margin: 24px auto 0
+
+@media(max-width: 991px)
+
+  .sidebar
+    &__btn
+      display: flex
+      flex-direction: column
+      align-items: center
+      & > span
+        font-size: 14px
+
+@media(max-width: 767px)
+
+  .reviews
+    &__title
+      margin-top: 24px
+      
+      &-container
+        flex-direction: column
+        gap: 0
+        padding-left: 20px
+
+    &__btn
+      margin-top: 40px
+      margin-bottom: 24px
+      width: 100%
+
+    &__quantity
+      margin-top: 0
+
+      &-index
+        display: inline
